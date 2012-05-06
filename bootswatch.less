@@ -6,18 +6,83 @@
 // -----------------------------------------------------
 
 @import url(http://fonts.googleapis.com/css?family=Candal);
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
 
 // MISC
 // -----------------------------------------------------
+
+.container-fluid {
+  padding-top:		80px;
+}
+
+.row-fluid {
+  padding-bottom:	280px;
+}
+
+.footer  {
+	    font-size: 12px;
+		border-top:1px solid @grayLighter;
+	    clear: both;
+	    padding: 10px 0 20px;
+	}
+
+
+
+.headline {
+  padding: 60px;
+  margin-bottom: 30px;
+  background-color: @yellowPastel;
+  font-family: @headlineFontFamily;
+  .border-radius(6px);
+  h1 {
+    margin-bottom: 0;
+    font-size: 48px;
+    line-height: 1;
+    color: @navy;
+    
+  }
+  p {
+    font-size: 24px;
+    font-weight: 200;
+    font-family: @headlineFontFamily;
+    line-height: @baseLineHeight * 1.5;
+    color: @navy;
+  }
+}
+
+.headline-unit {
+  padding: 8px;
+  margin-bottom: 30px;
+  background-color: @white;
+  font-family: @headlineFontFamily;
+  .border-radius(6px);
+  h2 {
+    margin-bottom: 0;
+    font-size: 28px;
+    line-height: 1;
+    color: @navy;
+    
+  }
+  p {
+    font-size: 18px;
+    font-weight: 200;
+    font-family: @headlineFontFamily;
+    line-height: @baseLineHeight * 1.5;
+    color: @navy;
+  }
+}
+
 
 
 // NAVBAR
 // -----------------------------------------------------
 
 .navbar {
+
   .brand {
     font-family:	@brandFontFamily;
     font-size:		32px; 
+    text-shadow: 	3px 3px 3px @black;
   }
 
   .nav .active {
@@ -26,7 +91,7 @@
 
   .nav > li > a {
     padding-top:	26px;
-    
+    font-size:		14px; 
   }
 
 }
